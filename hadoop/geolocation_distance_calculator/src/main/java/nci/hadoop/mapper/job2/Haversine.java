@@ -1,4 +1,4 @@
-package nci.hadoop.mapper;
+package nci.hadoop.mapper.job2;
 /**
  * Jason Winn
  * http://jasonwinn.org

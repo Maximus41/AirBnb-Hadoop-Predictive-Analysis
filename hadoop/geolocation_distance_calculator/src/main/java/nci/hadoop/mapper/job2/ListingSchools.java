@@ -1,4 +1,4 @@
-package nci.hadoop.mapper;
+package nci.hadoop.mapper.job2;
 
 import org.apache.hadoop.mapred.lib.db.DBWritable;
 
@@ -10,7 +10,7 @@ public class ListingSchools implements DBWritable {
 
     private long slno, id;
     private double lat1, long1, lat2, long2;
-    private String roll_no, ethos;
+    private String roll_no;
 
     @Override
     public void write(PreparedStatement statement) throws SQLException {
@@ -19,9 +19,8 @@ public class ListingSchools implements DBWritable {
         statement.setDouble(3, this.lat1);
         statement.setDouble(4, this.long1);
         statement.setString(5, this.roll_no);
-        statement.setString(6, this.ethos);
-        statement.setDouble(7, this.long2);
-        statement.setDouble(8, this.lat2);
+        statement.setDouble(6, this.lat2);
+        statement.setDouble(8, this.long2);
     }
 
     @Override
@@ -31,9 +30,8 @@ public class ListingSchools implements DBWritable {
         this.lat1 = resultSet.getDouble(3);
         this.long1 = resultSet.getDouble(4);
         this.roll_no = resultSet.getString(5);
-        this.ethos = resultSet.getString(6);
+        this.lat2 = resultSet.getDouble(6);
         this.long2 = resultSet.getDouble(7);
-        this.lat2 = resultSet.getDouble(8);
     }
 
 
@@ -91,13 +89,5 @@ public class ListingSchools implements DBWritable {
 
     public void setRoll_no(String roll_no) {
         this.roll_no = roll_no;
-    }
-
-    public String getEthos() {
-        return ethos;
-    }
-
-    public void setEthos(String ethos) {
-        this.ethos = ethos;
     }
 }

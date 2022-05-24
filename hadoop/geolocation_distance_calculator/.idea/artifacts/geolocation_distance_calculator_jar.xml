@@ -3,9 +3,10 @@
     <output-path>$PROJECT_DIR$/out/artifacts/geolocation_distance_calculator_jar</output-path>
     <root id="archive" name="geolocation_distance_calculator.jar">
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/test/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="geolocation_distance_calculator.main" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
     </root>
   </artifact>
 </component>

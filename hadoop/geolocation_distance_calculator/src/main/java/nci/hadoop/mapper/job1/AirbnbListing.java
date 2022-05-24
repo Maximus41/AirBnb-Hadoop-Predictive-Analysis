@@ -1,4 +1,4 @@
-package nci.hadoop.mapper;
+package nci.hadoop.mapper.job1;
 
 import org.apache.hadoop.mapred.lib.db.DBWritable;
 

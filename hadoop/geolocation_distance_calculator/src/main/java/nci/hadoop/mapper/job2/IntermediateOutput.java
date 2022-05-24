@@ -1,4 +1,4 @@
-package nci.hadoop.mapper;
+package nci.hadoop.mapper.job2;
 
 import org.apache.hadoop.io.Writable;
 

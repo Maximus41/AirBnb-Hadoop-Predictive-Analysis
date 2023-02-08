@@ -356,10 +356,16 @@ For continuous variables, Perason's correlation was
 calculated to determine the strength and relationship of the 
 variables. A heatmap (Fig 2) was also created using the co-efficient matrix.
 
+![pearson](./images/pearson_corr.png)
+***Fig 2:* Pearson's Correlation Matrix**
+
 *Histograms:*
 
 In addition, histograms (Fig 2.1) for essential 
 continuous variables were generated.
+
+![histogram](./images/histograms.png)
+***Fig 2.1:* Histograms**
 
 *Barcharts:*
 
@@ -370,19 +376,35 @@ of the most important are listed here.
 1. These graphs (Fig 2.2) relate the density of schools 
 across Ireland to those closest to property listings, 
 with distinct ethos groups.
+
+![ethos](./images/ethos_bar_charts.png)
+***Fig 2.2:* Bar chart on Ethos**
+
 2. The first graph in the Fig 2.3 shows the total number 
 of listings by room type. The second graph shows 
 the average rental price vs the distance to the nearest 
 school.
+
+![multiple](./images/room_type_and_distlvl.png)
+***Fig 2.3:* Room Type & Avg Price vs Distance**
+
+
 3. The number of listings is plotted against the distance 
 to the nearest school and is classified by room type 
 in this graph (Fig 2.4)
+
+![distance_lvl_count](./images/distancelvl_count.png)
+***Fig 2.4:* Bar Chart Listings vs Proximity to the schools**
 
 *Scatter plots:*
 These scatter plots (Fig 2.5) were created to 
 demonstrate the impact of school location on rental costs. 
 Before graphing the data, it was divided into four different 
 categories based on room type.
+
+![distance_lvl_count](./images/scatter_plots.png)
+***Fig 2.5:*  Price vs Nearest School Distance Scatter**
+
 
 **Predictive Analysis:**
 In order to develop a model to forecast rental prices, 
